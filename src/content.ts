@@ -26,7 +26,7 @@ export const SITE: Site = {
     weight: 800,
     upper: false,
   },
-  scene: "tandoor",
+  scene: "pour",
   align: "left",
   hero: {
     title: [
@@ -92,9 +92,35 @@ export const SITE: Site = {
     address: { en: "Gurgaon–Sohna main road (Delhi–Alwar Rd), near the bus stand, Sohna", hi: "गुड़गांव–सोहना मेन रोड (दिल्ली–अलवर रोड), बस स्टैंड के पास, सोहना" },
     note: { en: "Open from 8am, so breakfast parathas are on.", hi: "सुबह 8 बजे से खुला, नाश्ते में पराठे मिलते हैं।" },
   },
+  pour: { from: "pan", into: "kadhai", liquid: "#6e3317", foam: "#9c5a32", thick: 2.2, hot: true, butter: true },
+  story: [
+    { kicker: { en: "The dal", hi: "दाल" }, title: { en: "The butter dal people drive for.", hi: "बटर दाल, जिसके लिए लोग आते हैं।" }, quote: "Their Butter dal is out of this world with Roti and Garlic naan." },
+    { kicker: { en: "The kitchen", hi: "रसोई" }, title: { en: "Pure veg, made clean.", hi: "शुद्ध शाकाहारी, साफ़-सुथरा।" }, quote: "A nice restaurant. Purely vegetarian. Preparation of food is very hygienic. Rates are reasonable." },
+    { kicker: { en: "The stop", hi: "पड़ाव" }, title: { en: "Some make it their only stop.", hi: "कुछ के लिए यही इकलौता पड़ाव।" }, quote: "In my trip to Delhi, this is my Only food stop!! Food is clean and simple unlike others which serve highly fatty heavy food!!" },
+  ],
+  build: {
+    title: { en: "Build your order in a few taps", hi: "कुछ टैप में अपना ऑर्डर बनाइए" },
+    body: { en: "Tap the dishes guests rave about, set how many and when. It goes to WhatsApp exactly as you see it.", hi: "मेहमानों की पसंदीदा डिश टैप करें, कितने लोग और कब, चुनें। मैसेज व्हाट्सऐप पर ठीक ऐसे ही जाएगा।" },
+    pick: { label: { en: "Visit", hi: "विज़िट" }, options: [
+      { name: { en: "Dine in", hi: "यहीं खाना" } },
+      { name: { en: "Family party", hi: "फ़ैमिली पार्टी" }, note: { en: "Seating for small functions", hi: "छोटे फ़ंक्शन की बैठक" } },
+      { name: { en: "Catering", hi: "कैटरिंग" }, note: { en: "A menu made to your order", hi: "आपके हिसाब से मेन्यू" } },
+    ] },
+    items: [
+      { en: "Butter Dal", hi: "बटर दाल" },
+      { en: "Soya Chaap", hi: "सोया चाप" },
+      { en: "Tandoori Mushroom", hi: "तंदूरी मशरूम" },
+      { en: "Paneer Butter Masala", hi: "पनीर बटर मसाला" },
+      { en: "Aloo Paratha", hi: "आलू पराठा" },
+      { en: "Tawa Butter Roti", hi: "तवा बटर रोटी" },
+    ],
+    people: true,
+    when: true,
+    hello: { en: "Hi Sanduja Food Palace, I'd like:", hi: "नमस्ते सांडूजा फ़ूड पैलेस, मुझे चाहिए:" },
+  },
   waHello: {
     en: "Hi Sanduja Food Palace, I'd like to ask about the party hall / catering. Date: , people: ",
     hi: "नमस्ते संदूजा फ़ूड पैलेस, मुझे पार्टी हॉल / कैटरिंग के बारे में पूछना है। तारीख़: , लोग: ",
   },
-  order: ["dishes", "feature", "reviews", "gallery", "visit"],
+  order: ["build", "dishes", "feature", "reviews", "gallery", "visit"],
 };
